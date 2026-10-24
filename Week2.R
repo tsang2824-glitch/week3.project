@@ -1,3 +1,4 @@
+###HELLO KAREN###
 # Week 2: Summaries and Statistical Tests
 viz_data = readr::read_csv("data/viz_data.csv")
 head(viz_data)
@@ -40,7 +41,7 @@ response_ttest$p.value        # 1.18611e-07
 response_ttest$conf.int       # 5.18 to 10.96
 ttest_hc
 ttest_hc$p.value
-Summary(group_avo)$p.value
+summary(group_aov)$p.value
 summary(group_aov)$p.value
 aov_summary = summary(group_aov)
 str(aov_summary)
@@ -201,3 +202,6 @@ clinic_clean %>%
 
 write_csv(clinic_clean, "data/clinic_clean.csv")
 list.files("data")
+
+ls()
+exists("group_avo")
